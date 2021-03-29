@@ -1,5 +1,7 @@
 data "template_file" "phpconfig" {
-  template = file("~/SprintDO/Terraform/Session9/word-press/files/conf.wp-config.php")
+  template = file("~/Terraform/session10_practice/Terraform/Session9/word-press/files/conf.wp-config.php")
+
+   #~/Terraform/session10_practice/Terraform/Session9/terraform-ansible/provision.yml
 
   vars = {
     db_port = aws_db_instance.db.port
