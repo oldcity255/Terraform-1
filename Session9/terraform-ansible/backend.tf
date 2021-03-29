@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-files-mcalik"
+    bucket = "vepas-terraform-state-file"
     key    = "tfstate/session9.tfstate"
     region = "us-east-1"
   }

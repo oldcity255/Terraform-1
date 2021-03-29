@@ -17,7 +17,7 @@
       become_method: sudo
     - name: copy index.html
       copy:
-        src: ~/SprintDO/Terraform/Session9/terraform-ansible/index.html
+        src: ~/Terraform/session10_practice/Terraform/Session9/terraform-ansible/index.html
         dest: /var/www/html/
       become: yes
       become_method: sudo

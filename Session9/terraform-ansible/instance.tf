@@ -34,7 +34,7 @@ resource "aws_instance" "web" {
 	provisioner "local-exec" {
         command = <<EOT
            export ANSIBLE_HOST_KEY_CHECKING=False
-           ansible-playbook -u ec2-user -i '${self.public_ip},' --private-key ~/.ssh/id_rsa  ~/SprintDO/Terraform/Session9/terraform-ansible/provision.yml
+           ansible-playbook -u ec2-user -i '3.141.41.80' --private-key ~/.ssh/id_rsa  ~/Terraform/session10_practice/Terraform/Session9/terraform-ansible/provision.yml
         EOT
 }
 
