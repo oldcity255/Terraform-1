@@ -1,6 +1,7 @@
-# #basic for loop
+#basic for loop
 # locals {
 #   list = ["a","b","c"]
+#   upper_list = [for s in local.list : upper(s)]
 # }
 # output "list" {
 #   value = [for s in local.list : upper(s)]
@@ -8,10 +9,10 @@
 
 # # list to map
 # locals {
-#   list = ["a","b","c"]
+#   names = ["a","b","c"]
 # }
 # output "result" {
-#   value = {for index, list in local.list : index => list }
+#   value = {for index, name in local.names: index => name }
 # }
 
 # # filtering
@@ -19,5 +20,5 @@
 #   list = [1,2,3,4,5]
 # }
 # output "list" {
-#   value = [for i in local.list : i if i < 3]
+#   value = [for i in local.list : i if i < 3 ]
 # }
